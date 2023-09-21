@@ -1,0 +1,172 @@
+body {
+
+    background-image : linear-gradient(black, rgb(32, 32, 32));
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    margin:0;
+    padding:0;
+
+    max-width: 1.0;
+
+}
+
+.head{
+
+    position: relative;
+    border: 0px;
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 6em;
+
+}
+
+#header{
+    font-size: 350%;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    color : white;
+}
+
+/* ---------------------------------------------------------------------------------------------------------- */
+.aboutme{
+    height: 35em;
+    position: relative;
+    margin-top: 2%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    margin-bottom: 0.5%;
+    transition: 0.3s;
+    opacity: 80%;
+}
+
+.aboutme:hover{
+    background-color: rgb(19, 18, 18);
+    opacity: 80%;
+    text-decoration-color: white;
+    
+}
+
+.aboutme img{
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+#desc1{
+    font-size: 200%;
+    text-align: center;
+    top: 5%;
+    position: relative;
+    display: block;
+    margin: auto;
+    color: white;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+.organization{
+    height: 30em;
+    /* background-color: black; */
+    position: relative;
+    margin: 0.5%;
+    transition: 0.3s;
+    opacity: 80%;
+}
+
+.organization:hover{
+    background-color: rgb(15, 15, 15);
+    opacity: 80%;
+    
+}
+
+.org{
+    font-size: 200%;
+    position: absolute;
+    left: 5%;
+    color: white;
+}
+
+.organization ul li{
+    color: white;
+}
+
+#pengalaman{
+    font-size: 100%;
+    text-decoration: none;
+}
+
+.logo{
+    width: 520px;
+    height: 415px;
+    position: absolute;
+    right:3%;
+    top: 3%;
+    margin: auto;
+}
+
+#source{
+    font-size: 70%;
+    color: white;
+    position: absolute;
+    text-decoration:none;
+    left: 75%;
+    top: 86%;
+    max-width: 200em;
+    text-align: left;
+}
+
+/* ---------------------------------------------------------------------------------------------------------- */
+.footer{
+    position: relative;
+    width: 100%;
+    height: 4em;
+    /* background-color: black; */
+    padding: 2em;
+    border: 1px black;
+    bottom: 0%;
+}
+
+.footer:hover{
+    background-color: rgb(22, 22, 22);
+    opacity: 80%;
+}
+
+#socialmedia{
+    font-size: 200%;
+    color: white;
+    left: 45%;
+    top: 5%;
+    position: absolute;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.linked{
+    font-size: 200%;
+    text-decoration: none;
+    color: white;
+    left: 46.2%;
+    top: 60%;
+    position: absolute;
+    text-align: center;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+
+}
+
+.linked:hover{
+    color: lightblue;
+    opacity: 90%;
+    text-decoration: none;
+}
