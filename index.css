@@ -1,23 +1,20 @@
+
+
 body {
 
-    background-image : linear-gradient(black, rgb(32, 32, 32));
-    background-size: 100%;
-    width: 100%;
-    height: 100%;
+    background-image : linear-gradient(black, rgb(32, 32, 32), black);
     margin:0;
     padding:0;
-
-    max-width: 1.0;
-
+    @media screen {
+        overflow-x: hidden;
+    }
 }
 
 .head{
 
     position: relative;
-    border: 0px;
     margin: 0%;
     padding: 0%;
-    width: 100%;
     height: 6em;
 
 }
@@ -25,6 +22,7 @@ body {
 #header{
     font-size: 350%;
     text-align: center;
+    right: 1%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -32,14 +30,31 @@ body {
     color : white;
 }
 
+.head img{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 1px;
+    left: 57.5%;
+    border-radius: 20%;
+    border: 1px solid white;
+    box-shadow: 2px 2px white;   
+    transition: 0.3s;
+}
+
+.head img:hover{
+    background-color: black;
+    border: 1px solid red;
+    border-radius:20%;
+    opacity: 90%;
+    object-fit: cover;
+    box-shadow: 2px 2px red;
+}
+
 /* ---------------------------------------------------------------------------------------------------------- */
 .aboutme{
-    height: 35em;
+    height: 30em;
     position: relative;
-    margin-top: 2%;
-    margin-left: 0.5%;
-    margin-right: 0.5%;
-    margin-bottom: 0.5%;
     transition: 0.3s;
     opacity: 80%;
 }
@@ -48,7 +63,6 @@ body {
     background-color: rgb(19, 18, 18);
     opacity: 80%;
     text-decoration-color: white;
-    
 }
 
 .aboutme img{
@@ -70,14 +84,104 @@ body {
     color: white;
 }
 
+/* ---------------------------------------------------------------------------------------------------------- */
+
+.myskill{
+    height: 35em;
+}
+
+.myskill:hover{
+    background-color: rgb(19, 18, 18);
+    opacity: 80%;
+    text-decoration-color: white;
+}
+
+.myskill p{
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    height: 1em;
+    font-size: 175%;
+}
+
+.myskill H1{
+    text-align: center;
+    text-decoration: underline;
+    position: relative;
+    font-size: 300%;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.skills{
+    height: 10em;
+    padding-left: 1%;
+    padding-right: 1%;
+    column-count: 3;
+  
+}
+
+.skill-container{
+    display: flex;
+    position: relative;
+    display: inline-block;
+    justify-content: space-evenly;
+    color: white;
+    height: 6em;
+    width: 600px;
+    border: 1px solid white;
+    box-shadow: 3px 3px white;
+    transition: 0.3s;
+}
+
+.skill-container:hover{
+    background-color: black;
+    opacity: 90%;
+    border-color: red;
+    box-shadow: 3px 3px red;
+}
+
+#language{
+    position: absolute;
+    top: 1em;
+    left: 4em;
+}
+
+#rate{
+    position: absolute;
+    top: 2em;
+    left: 4em;
+}
+
+.box{
+    display: relative;
+    width: 6em;
+}
+
+.skill-container img{
+    position: relative;
+    margin: 7px;    
+    width: 5em;
+    height: 5em;
+}
+
+#container{
+    position: relative;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
 
 /* ---------------------------------------------------------------------------------------------------------- */
 
 .organization{
     height: 30em;
-    /* background-color: black; */
     position: relative;
-    margin: 0.5%;
     transition: 0.3s;
     opacity: 80%;
 }
@@ -129,7 +233,6 @@ body {
     position: relative;
     width: 100%;
     height: 4em;
-    /* background-color: black; */
     padding: 2em;
     border: 1px black;
     bottom: 0%;
@@ -140,33 +243,11 @@ body {
     opacity: 80%;
 }
 
-#socialmedia{
+#thankyou{
     font-size: 200%;
     color: white;
-    left: 45%;
-    top: 5%;
-    position: absolute;
     text-align: center;
     display: block;
-    margin: auto;
-}
-
-.linked{
-    font-size: 200%;
-    text-decoration: none;
-    color: white;
-    left: 46.2%;
-    top: 60%;
-    position: absolute;
-    text-align: center;
-    display: block;
-    margin: auto;
-    transition: 0.3s;
-
-}
-
-.linked:hover{
-    color: lightblue;
-    opacity: 90%;
-    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
 }
